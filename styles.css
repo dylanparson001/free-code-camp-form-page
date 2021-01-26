@@ -1,0 +1,43 @@
+body{
+    color: white;
+    background-color: rgb(91, 96, 173);  
+}
+.title{
+    text-align: center;
+}
+.container{
+    background-color: rgba(51, 18, 104, 0.75);
+    margin: 5%;     
+}
+.forms{
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem;
+}
+
+#survey-form{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    margin: auto;
+    padding: 3em;
+    justify-content: flex-start;
+}
+
+input[type="text"] {
+    width: 80%;
+}
+input[type="email"] {
+    width: 80%;
+}
+input[type="number"] {
+    width: 80%;
+}
+textarea {
+    width: 80%;
+}
+input[type="text"] {
+    width: 80%;
+}
+#dropdown{
+    width: 81.8%;
+}

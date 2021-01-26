@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class = "title">
+        <h1 id = "title">This is a survey</h1>
+        <p id = "description">Please tell us your info</p>
+        </div>
+
+        <div class = "container">
+        <form id = "survey-form">
+
+            <div class = "forms">
+                <label id = "name-label" for = "name">Name</label><br>
+                <input type = "text" id = "name" id = "text-boxes" name = "name"
+                placeholder = "Please enter your name" required><br>
+            </div>
+
+            <div class = "forms">
+                <label id = "email-label" for = "email">Email</label><br>
+                <input type = "email" id = "email" id = "text-boxes" name = "email"
+                placeholder = "Please enter your email" required><br>
+            </div>
+
+            <div class = "forms">
+                <label id = "number-label" for = "number" id = "text-boxes">Age (optional)</label><br>
+                <input type = "number" id = "number" name = "number"
+                placeholder = "Please enter your age" min = "1" max = "110"><br>
+            </div>
+
+            <div class = "forms">
+                <label id = "dropdown-label" for = "dropdown">Which option describes your current role?</label><br>
+                <select name = "dropdown" id = "dropdown" required>
+                    <option disabled>Please choose an option</option>
+                    <option value = "full-time-job">Full time job</option>
+                    <option value = "full-time-learner">Full time learner</option>
+                    <option value = "not-say">Prefer not to say</option>
+                </select> 
+            </div>
+
+            <div class = "forms">
+                <p>Would you recommend us to a friend?</p>
+                <input type = "radio" id = "radio-buttons" name = "recommend" value = "yes">
+                <label for = "radio-buttons" id = "radio-label">Yes</label> <br>
+
+                <input type = "radio" id = "radio-buttons1" name = "recommend" value = "no">
+                <label for = "radio-buttons1" id = "radio-label">No</label><br>
+
+                <input type = "radio" id = "radio-buttons2" name = "recommend" value = "maybe">
+                <label for = "radio-buttons2" id = "radio-label">Maybe</label><br>
+
+            </div>
+
+            <div class = "forms">
+                <p>What would you like us to improve?</p>
+                <input type = "checkbox" id = "checkbox" name = "improve" value = ="front-end-projects">
+                <label for = "improve" id = "checkbox-label">Front end projects</label> <br>
+                <input type = "checkbox" id = "checkbox" name = "improve" value = ="back-end-projects">
+                <label for = "improve" id = "checkbox-label">Back end projects</label> <br>
+                <input type = "checkbox" id = "checkbox" name = "improve" value = ="personal-projects">
+                <label for = "improve" id = "checkbox-label">Personal projects</label> <br>
+            </div>
+
+            <div class = "forms">
+                <label for = "comments">Any comments?</label><br>
+                <textarea id = "comments" name = "comments" placeholder = "Your comments here..">
+                </textarea>
+            </div>
+
+            <div class = "forms">
+                <input type = "submit" value = "Submit" id = "submit">
+
+            </div>
+
+        </form>
+        </div>
+    </body>
+</html>
